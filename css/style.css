@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+:root{
+    --secondary-color: #0084FD;
+    --dark-color: #333333;
+    --light-color: #FFFFFF;
+    --primary-color: #9792E4;
+    --bg-card: #B5DDFF;
+    --contrast-color: #FDC15F;
+
+}
+/* general */
+body{
+    background-color: var(--light-color);
+}
+.container{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+/* utilities */
+
+.small.button{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.bg-w{
+    background-color: var(--light-color);
+}
+
+/* text utilities */
+.text-c{
+text-align: center;
+}
+.text-b{
+    color: black;
+}
+    /* flex utilities */
+.d-flex{
+    display: flex;
+}
+.j-sb{
+    justify-content: space-between;
+}
+.align-c{
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+/* header */
+header{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+header ul{
+    list-style: none;
+}
+header a{
+    color:var(--light-color);
+}
+header nav i{
+    font-size: 1.6rem;
+}
+
+/* main */
+main{
+    margin-top: 80px;
+}
+.bg-prim-col{
+    background-color: var(--primary-color);
+}
+.card img{
+    max-width: 100%;
+}
+/* intro section */
+.card{
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px){
+    #intro .card{
+        width: calc((100% / 3) - 20px);
+    }
+    #intro .card:first-child{
+        width: calc((100% / 3 * 2) - 20px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /* general */
+    .container{
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    /* header */
+    #burger{
+        display: none;
+    }
+    header ul.hidden{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    
+
+}
