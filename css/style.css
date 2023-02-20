@@ -25,20 +25,50 @@ a{
 }
 /* utilities */
 
+.button{
+    border-radius: 20px;
+}
 .small.button{
     padding: 5px 10px;
-    border-radius: 20px;
+}
+.button.wide{
+    padding: 5px 50px;
 }
 .bg-w{
     background-color: var(--light-color);
 }
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+/* maergins */
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
 
+.mb-50{
+    margin-bottom: 50px;
+}
 /* text utilities */
-.text-c{
+.text-center{
 text-align: center;
 }
 .text-b{
     color: black;
+}
+.text-w{
+    color: rgb(255, 255, 255);
+}
+.text-sc{
+    color: var(--secondary-color);
+}
+h4{
+    font-size: 1.3rem;
 }
     /* flex utilities */
 .d-flex{
@@ -80,16 +110,24 @@ main{
 .bg-prim-col{
     background-color: var(--primary-color);
 }
-.card img{
-    max-width: 100%;
-}
 /* intro section */
 .card{
     background-color: var(--bg-card);
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
 }
-
+.card img{
+    max-width: 200px;
+    display: block;
+}
+#intro .card:first-child{
+    padding-bottom: 0px;
+}
+i.fa-apple{
+    padding: 5px 10px 5px 0px;
+}
 /* footer */
 footer{
     background-color: var(--dark-color);
