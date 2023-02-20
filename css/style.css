@@ -23,6 +23,9 @@ body{
 a{
     text-decoration: none;
 }
+p{
+    line-height: 1.5rem;
+}
 /* utilities */
 
 .button{
@@ -75,12 +78,18 @@ text-align: center;
 h4{
     font-size: 1.3rem;
 }
+h3{
+    font-size: 2rem
+}
     /* flex utilities */
 .d-flex{
     display: flex;
 }
 .j-sb{
     justify-content: space-between;
+}
+.j-c{
+    justify-content: center;
 }
 .align-c{
     align-items: center;
@@ -116,6 +125,10 @@ main{
 .bg-prim-col{
     background-color: var(--primary-color);
 }
+.card img, #planning img{
+    max-width: 100%;
+    display: block;
+}
 /* intro section */
 .card{
     background-color: var(--bg-card);
@@ -123,10 +136,6 @@ main{
     margin-bottom: 10px;
     padding: 20px;
     position: relative;
-}
-.card img{
-    max-width: 100%;
-    display: block;
 }
 #intro .phone-wrap{
     max-width: 350px;
@@ -140,15 +149,54 @@ i.fa-apple{
 div.card>i{
     font-size: 4rem;
 }
+/* planning section */
+div.app-dev{
+    width: calc(100% - 20px);
+    margin: 0 auto 30px auto;
+    border-radius: 60px;
+    padding: 5px;
+}
+#planning .app-dev a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+#planning .app-dev a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
+#planning .plan-img-1{
+    margin-top: 60px;
+}
+
 /* footer */
 footer{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
+
+
+
+
+
+
+
+
 /* Responsive */
 
 @media screen and (min-width: 768px){
+    /* utilities */
+    p{
+        line-height: 1.5rem;
+    }
+
+    /* header */
+    /* main */
     #intro .card{
         width: calc((100% / 3) - 20px);
     }
@@ -163,10 +211,7 @@ footer{
     #intro .card.align-c{
         align-items: flex-start;
     }
-    #intro div.card p{
-        line-height: 1.5rem;
-    }
-
+    
 
 }
 
@@ -195,5 +240,15 @@ footer{
     #intro div.card.f-col{
         flex-direction: row;
     }
-    
+    /* main */
+    #planning .container{
+        display: flex;
+        align-items: flex-end;
+        gap: 60px;
+    }
+    #planning .plan-img-1{
+        margin-bottom: 250px;
+    }
+    /* main */
+
 }
