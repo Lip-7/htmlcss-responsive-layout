@@ -27,7 +27,9 @@ p{
     line-height: 1.5rem;
 }
 /* utilities */
-
+.upper{
+    text-transform: uppercase;
+}
 .button{
     border-radius: 20px;
 }
@@ -46,6 +48,9 @@ p{
 .hidden{
     display: none;
 }
+.radius-big{
+    border-radius: 60px;
+}
 /* margins */
 .mb-10{
     margin-bottom: 10px;
@@ -58,6 +63,10 @@ p{
 }
 .mb-30{
     margin-bottom: 30px;
+}
+.mt-30{
+    margin-top: 30px;
+
 }
 .mb-50{
     margin-bottom: 50px;
@@ -74,6 +83,9 @@ text-align: center;
 }
 .text-sc{
     color: var(--secondary-color);
+}
+.text-pc{
+    color: var(--primary-color);
 }
 h4{
     font-size: 1.3rem;
@@ -153,9 +165,9 @@ div.card>i{
 div.app-dev{
     width: calc(100% - 20px);
     margin: 0 auto 30px auto;
-    border-radius: 60px;
     padding: 5px;
 }
+
 #planning .app-dev a{
     width: 40px;
     height: 40px;
