@@ -40,9 +40,15 @@ a{
 .bg-secondary{
     background-color: var(--secondary-color);
 }
-/* maergins */
+.hidden{
+    display: none;
+}
+/* margins */
 .mb-10{
     margin-bottom: 10px;
+}
+.mt-10{
+    margin-top: 10px;
 }
 .mb-20{
     margin-bottom: 20px;
@@ -50,7 +56,6 @@ a{
 .mb-30{
     margin-bottom: 30px;
 }
-
 .mb-50{
     margin-bottom: 50px;
 }
@@ -80,9 +85,10 @@ h4{
 .align-c{
     align-items: center;
 }
-.hidden{
-    display: none;
+.f-col{
+    flex-direction: column;
 }
+
 /* header */
 header{
     background-color: var(--secondary-color);
@@ -119,14 +125,20 @@ main{
     position: relative;
 }
 .card img{
-    max-width: 200px;
+    max-width: 100%;
     display: block;
+}
+#intro .phone-wrap{
+    max-width: 350px;
 }
 #intro .card:first-child{
     padding-bottom: 0px;
 }
 i.fa-apple{
     padding: 5px 10px 5px 0px;
+}
+div.card>i{
+    font-size: 4rem;
 }
 /* footer */
 footer{
@@ -143,12 +155,30 @@ footer{
     #intro .card:first-child{
         width: calc((100% / 3 * 2) - 20px);
     }
+   #intro .container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+    #intro .card.align-c{
+        align-items: flex-start;
+    }
+    #intro div.card p{
+        line-height: 1.5rem;
+    }
+
+
 }
 
-@media screen and (min-width: 1200px){
+
+
+
+
+
+@media screen and (min-width: 1060px){
     /* general */
     .container{
-        max-width: 1200px;
+        max-width: 1060px;
         margin: 0px auto;
     }
 
@@ -162,6 +192,8 @@ footer{
         align-items: center;
         gap: 30px;
     }
+    #intro div.card.f-col{
+        flex-direction: row;
+    }
     
-
 }
