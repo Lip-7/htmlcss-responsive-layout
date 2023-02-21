@@ -30,7 +30,7 @@ a{
     text-decoration: none;
 }
 p{
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 /* utilities */
 .upper{
@@ -44,6 +44,9 @@ p{
 }
 .button.wide{
     padding: 5px 50px;
+}
+.button.very-wide{
+    padding: 10px 50px;
 }
 .big.button{
     padding: 20px 50px;
@@ -83,6 +86,20 @@ p{
 .mt-50{
     margin-top: 50px;
 }
+.mb-80{
+    margin-bottom: 80px;
+}
+/* paddings */
+.pb-50{
+    padding-bottom: 50px;
+}
+.pt-80{
+    padding-top: 80px;
+
+}
+.pb-100{
+    padding-bottom: 100px;
+}
 /* text utilities */
 .text-center{
 text-align: center;
@@ -102,17 +119,23 @@ text-align: center;
 .text-pc{
     color: var(--primary-color);
 }
+.text-space{
+    letter-spacing: 2px;
+}
 h4{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 h3{
     font-size: 2rem
 }
 h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 .text-left{
     text-align: start;
+}
+.text-medium{
+    font-size: 1.3rem;
 }
     /* flex utilities */
 .d-flex{
@@ -232,8 +255,32 @@ div.app-dev{
     background-color: var(--light-color);
     padding-bottom: 40px;
 }
-/* about us */
+#features .card.bg-w {
+    margin-bottom: 40px;
+}
 
+/* about us */
+#about-us p{
+    line-height: 3rem;
+}
+#about-us .circle-img{
+    margin: 0;
+}
+#about-us .img-wrap{
+    position: relative;
+}
+#about-us span.accent-text{
+    font-size: 15rem;
+    position: absolute;
+    top: -48px;
+    left: 136px;
+}
+#about-us .col-second-text i{
+    margin-right: 15px;
+}
+#about-us .button.wide{
+    padding: 5px 20px;
+}
 
 
 
@@ -264,7 +311,10 @@ footer{
     .inner-flex{
         display: flex;
     }
-
+    .container{
+        max-width: 900px;
+        margin: 0px auto;
+    }
     /* header */
     /* main */
     #intro .card{
@@ -284,11 +334,18 @@ footer{
     /* testimonials */
     #testimonials .card-text{
         width: 70%;
+        padding-left: 30px;
     }
+    #testimonials .card-text p{
+        text-indent: -10px;
+    }
+
     #testimonials .card-text h4{
         text-align: start;
     }
-    
+    #testimonials .circle-img{
+        margin: 0;
+    }
     /* features */
     #features .cards{
         display: flex;
@@ -299,19 +356,30 @@ footer{
     #features .card{
         width: calc((100% / 2) - 20px);
     }
+    #features .card.bg-w {
+        margin-bottom: 20px;
+    }
+    
+
+    /* about us */
 
     #about-us .col-first{
-        width: calc(60% - 10px);
+        width: calc(70% - 10px);
     }
     #about-us .col-second{
-        width: calc(40% - 10px);
+        width: calc(30% - 10px);
     }
-    #about-us .container{
+    #about-us .container {
         display: flex;
-        gap: 10px;
+        gap: 70px;
+        justify-content: space-between;
     }
-
-
+    #about-us .circle-img{
+        margin: 0 auto;
+    }
+    #about-us span.accent-text {
+        left: 150px;
+    }
 }
 
 
@@ -336,10 +404,10 @@ footer{
         align-items: center;
         gap: 30px;
     }
+    /* main */
     #intro div.card.f-col{
         flex-direction: row;
     }
-    /* main */
     #planning .container{
         display: flex;
         align-items: flex-end;
@@ -348,13 +416,19 @@ footer{
     #planning .plan-img-1{
         margin-bottom: 250px;
     }
+    #testimonials .card-text h4{
+        padding-left: 20px;
+    }
 
     #features .card{
         width: calc((100% / 3) - 20px);
     }
 
-   
-    
+    /* about us */
+    #about-us span.accent-text {
+        left: 180px;
+    }
+
 
 
     /* main */
