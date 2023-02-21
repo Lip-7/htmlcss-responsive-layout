@@ -142,6 +142,9 @@ h2{
 .text-left{
     text-align: start;
 }
+.text-big{
+    font-size: 3rem;
+}
 .text-medium{
     font-size: 1.3rem;
 }
@@ -295,7 +298,7 @@ div.app-dev{
 /* call to action */
 #call-to-action div.container>span:first-child{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 50%;
 }
 #call-to-action .copy a{
@@ -305,7 +308,7 @@ div.app-dev{
 #call-to-action h2{
     font-size: 4.5rem;
 }
-#call-to-action .container{
+#call-to-action .action-bottom-wrap{
     max-width: 500px;
     margin: 0 auto;
 }
@@ -340,7 +343,7 @@ footer a{
 @media screen and (min-width: 768px){
     /* utilities */
     p{
-        line-height: 1.5rem;
+        line-height: 1.8rem;
     }
     .inner-flex{
         display: flex;
@@ -349,6 +352,10 @@ footer a{
         max-width: 900px;
         margin: 0px auto;
     }
+    h2{
+        font-size: 5rem;
+    }
+
     /* header */
     /* main */
     #intro .card{
@@ -415,12 +422,12 @@ footer a{
         left: 150px;
     }
 
-
-    /* call-to-action */
-    #call-to-action h2{
-        font-size: 5rem;
+    /* call to action */
+    #call-to-action h3{
+        font-size: 3rem;
     }
-
+    
+    
 }
 
 
