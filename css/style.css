@@ -13,7 +13,13 @@
     --contrast-color: #FDC15F;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 /* general */
+section{
+    scroll-margin-top: 30px;
+}
 body{
     background-color: var(--light-color);
 }
@@ -38,6 +44,9 @@ p{
 }
 .button.wide{
     padding: 5px 50px;
+}
+.big.button{
+    padding: 20px 50px;
 }
 .bg-w{
     background-color: var(--light-color);
@@ -71,6 +80,9 @@ p{
 .mb-50{
     margin-bottom: 50px;
 }
+.mt-50{
+    margin-top: 50px;
+}
 /* text utilities */
 .text-center{
 text-align: center;
@@ -80,6 +92,9 @@ text-align: center;
 }
 .text-w{
     color: rgb(255, 255, 255);
+}
+.text-y{
+    color: var(--contrast-color);
 }
 .text-sc{
     color: var(--secondary-color);
@@ -92,6 +107,12 @@ h4{
 }
 h3{
     font-size: 2rem
+}
+h2{
+    font-size: 3rem;
+}
+.text-left{
+    text-align: start;
 }
     /* flex utilities */
 .d-flex{
@@ -184,6 +205,40 @@ div.app-dev{
 #planning .plan-img-1{
     margin-top: 60px;
 }
+/* testimonials */
+.testimonial-card{
+    padding: 30px 20px;
+}
+.circle-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.circle-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#testimonials .card-text p span{
+    font-size: 2rem;
+}
+
+
+/* features */
+#features .card{
+    background-color: var(--light-color);
+    padding-bottom: 40px;
+}
+/* about us */
+
+
+
+
+
+
 
 /* footer */
 footer{
@@ -206,6 +261,9 @@ footer{
     p{
         line-height: 1.5rem;
     }
+    .inner-flex{
+        display: flex;
+    }
 
     /* header */
     /* main */
@@ -223,7 +281,36 @@ footer{
     #intro .card.align-c{
         align-items: flex-start;
     }
+    /* testimonials */
+    #testimonials .card-text{
+        width: 70%;
+    }
+    #testimonials .card-text h4{
+        text-align: start;
+    }
     
+    /* features */
+    #features .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    #features .card{
+        width: calc((100% / 2) - 20px);
+    }
+
+    #about-us .col-first{
+        width: calc(60% - 10px);
+    }
+    #about-us .col-second{
+        width: calc(40% - 10px);
+    }
+    #about-us .container{
+        display: flex;
+        gap: 10px;
+    }
+
 
 }
 
@@ -261,6 +348,16 @@ footer{
     #planning .plan-img-1{
         margin-bottom: 250px;
     }
+
+    #features .card{
+        width: calc((100% / 3) - 20px);
+    }
+
+   
+    
+
+
     /* main */
+
 
 }
